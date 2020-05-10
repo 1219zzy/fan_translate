@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "ComicTranslator",
+  "version": "0.0",
+  "description": "This extension uses OCR to get the text in the comic and translate it to Chinese.",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Screen capture!"
+  },
+  "icons": {
+		"16":"icon.png",
+		"32":"icon.png",
+		"64":"icon.png"
+	},
+  "permissions": [
+    "activeTab",
+    "notifications"
+  ]
+  
+}

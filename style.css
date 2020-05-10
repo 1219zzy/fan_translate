@@ -1,0 +1,23 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+#target {
+    user-select: none;
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#div {
+    border: 1.5px dashed rgb(148, 184, 184);
+    position: absolute;
+}
