@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小凡翻翻</title>
+	<link rel="stylesheet" type="text/css" href="../css/style001.css">
+	<style>
+#datatable
+  {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  width:100%;
+  border-collapse:collapse;
+  }
+
+#datatable td, #datatable th 
+  {
+  font-size:15px;
+  border:1px solid darkslategrey;
+  padding:3px 7px 2px 7px;
+  vertical-align:bottom;
+  text-align:center;
+  }
+
+#datatable th 
+  {
+  font-size:15px;
+  text-align:center;
+  padding-top:5px;
+  padding-bottom:4px;
+  background-color:darkslategrey;
+  color:#ffffff;
+  }
+
+#datatable tr.alt td 
+  {
+  color:#000000;
+  background-color:#EAF2D3;
+  }
+  .tc{
+	  width:500px;
+	  height: 200px;
+	  background: red;
+	  position: absolute;
+	  top:50%;
+	  left:50%;
+	  margin-left: -250px;
+	  margin-top: -100px;
+	  z-index: 10;
+	  display: none;
+  }
+  .close{
+	  position:absolute;
+	  right:10px;
+	  top:10px;
+	  color:aqua;
+	  font-size:16px;
+	  z-index: 100;
+	  cursor:pointer;
+  } 
+  .tc h3{
+	  font-size: 24px;
+	  color:aqua;
+	  text-align: center;
+	  position:relative;
+	  z-index: 10;
+	  line-height: 200px;
+  }
+  .bk{
+	  width:100%;
+	  height: 100%;
+	  background: blueviolet;
+	  opacity: 0.5;
+	  position: absolute;
+	  top:0;
+	  left:0;
+  }
+	</style>
+
+</head>
+
+<body >
+	
+	<div class="heading">
+		<div class="heading_img">
+			<img src="../imgs/01.png" alt="头像"/>
+
+		</div>
+		<div class="heading_navbar">
+			<font color="white" font size=4px>小凡翻翻------日语单词本 </font>
+			
+			<!-- 1. 模态框的显示按钮，通常用于显示指定的模态框 -->
+			<div class="heading_right">
+				<a href="#my-modal-box" ><font color="white" font size=3px>HELP</font></a>
+		     </div>
+			<!-- 2. 模态框容器的根节点，它通常会显示为一个透明的遮罩覆盖全屏 -->
+			<div id="my-modal-box" class="modalbox">
+		
+				<!-- 3. 模态框内容的跟节点，它通常是一个非透明的容器，用于展示具体内容 -->
+				<div class="modalbox-dialog">
+		
+					<!-- 4. 模态框的关闭按钮，通常用于关闭模态框 -->
+					<a href="#close" title="关闭" class="modalbox-close-btn">X</a>
+		
+					<!-- 5. 你的自定义内容，纯文字、表单、提示信息等 -->
+					<h2>使用说明</h2>
+				</br>
+					<p>欢迎使用小凡翻翻单词表。</p>
+				</br>
+					<p>界面左侧是操作栏，你能够对单词表进行添加、查询、删除和清空操作。</p>
+			    </br>
+					<p>界面中央是单词表，你能在查看自己过去收录的单词。</p>
+			    </br>
+					<p>界面右侧我们为你提供了好用的在线翻译网站。</p>
+			     </br>
+					<p>希望你能有愉快的使用体验！</p>
+		
+				</div>
+		
+			</div>
+		</div>
+	</div>
+    
+	<div class="body">
+		
+			
+		<div class="body_left">	
+			<div class="body_left_one">
+				<h6><font font size=2px>let's study</font></h6>
+			</div>
+			<div class="body_left_two">
+				<form><input type="text" placeholder="please input new words..." id="name">
+				</form>		
+				</div>
+			<div class="body_left_three">
+					<form><input type="text" placeholder="please input Chinese..." id="memo">
+					</form>		
+				</div>
+				<div class="body_left_four">
+					<button type="botton" id="do-saveData">ADD</button>
+					<button type="botton" id="do-searData">SEARCH</button>
+					<button type="botton" id="do-deleteData">DELETE</button>
+					<button type="botton" id="do-delData">CLEAR</button>
+						
+				</div>
+		</div>
+	    
+			
+		<div class="body_right">
+			
+			<div class="right_mid">
+			</table>
+			<hr>
+			<table id="datatable"  >
+			</table>
+			</div>	
+			<div class="right_right">
+				<p><strong>相关的好用的在线翻译网站</strong></p>
+			</br>
+			<div class="demo01">
+				<img src="../imgs/02.png"/>
+				<p>
+				
+				<strong><a href="https://cn.bing.com/translator/?mkt=zh-CN" target="_blank">必应在线翻译</a></strong>
+				
+				</p>
+				
+			</div>
+			<div class="demo02">
+				<img src="../imgs/03.jpg"/>
+				<p>
+				
+				<strong><a href="http://fanyi.youdao.com/" target="_blank">有道在线翻译</a></strong>
+				
+				</p>
+				
+			</div>
+			<div class="demo01">
+				<img src="../imgs/04.jpg"/>
+				<p>
+				
+				<strong><a href="http://google.ifanyi.com.cn/" target="_blank">谷歌在线翻译</a></strong>
+				
+				</p>
+			</div>
+			</div>
+		</div>
+
+			
+			
+		</div>
+		
+	
+   </div>
+   <script src = "../js/jquery.js"></script>
+   <script src="../js/func2.js"></script>
+    
+
+
+</body>
+</html>

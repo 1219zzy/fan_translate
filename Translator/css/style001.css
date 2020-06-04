@@ -1,0 +1,265 @@
+*{
+	margin:0px;
+	padding:0px;
+	font:14px/1.5,normal,"-apple-system","Arial","sans-serif","宋体","Tahoma"
+}/*样式清除*/
+ 
+.heading{
+	width:auto;
+	height:40px;
+	padding-top:20px;
+	background:darkslategrey;
+	border:1px solid:#ccc;
+}
+.heading_right{
+	position: absolute;
+	right:10px;
+	top:0px;
+	width: 130px;
+	height:30px;
+	font-color:white;
+}
+.heading_img img{
+	border-radius:30px;/*圆角边框，变成圆形的头像*/
+	display:inline;/*在一行当中*/
+	width:35px;
+	height:35px;
+	float:left;/*向左浮动*/
+	margin-top:-5px;/*往上挪*/
+	margin-left:15px;
+}
+.heading_navbar{
+	width: 100%;
+	height:30px;
+	position:relative;
+	
+}
+.body_left_one{
+	width:280px;
+	height:33px;
+	margin:30px 15px 4px 20px;
+}
+.body_left_one h6{
+	color:#24292E;
+	line-height: 23px;
+	margin-bottom:6px;
+}
+
+.body_left_two{
+	width:255px;
+	height:35px;
+	margin:0px 15px 10px 20px;
+}
+.body_left_two input{
+	width:100%;
+	height:35px;
+	outline: none;/*取消外边框*/
+	border-radius: 3px;
+	border:1px solid #d1d5da;
+	box-shadow:inset 0 1px 2px rgba(27,31,35,.075);/*内部阴影*/
+	color:#AFB4B9; 
+	text-indent:11px;/*字缩进体*/
+}
+.body_left_two input:focus{
+	border-color:#66afe9;
+	outline:0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),
+	 0 0 8px rgba(102,175,233,.6);/*点击发光效果*/
+}
+.body_left_three{
+	width:255px;
+	height:45px;
+	margin:0px 15px 10px 20px;
+}
+.body_left_three input{
+	width:100%;
+	height:35px;
+	outline: none;/*取消外边框*/
+	border-radius: 3px;
+	border:1px solid #d1d5da;
+	box-shadow:inset 0 1px 2px rgba(27,31,35,.075);/*内部阴影*/
+	color:#AFB4B9; 
+	text-indent:11px;/*字缩进体*/
+}
+.body_left_three input:focus{
+	border-color:#66afe9;
+	outline:0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),
+	 0 0 8px rgba(102,175,233,.6);/*点击发光效果*/
+}
+.body_left_four{
+	width:280px;
+	height:50px;
+	margin:30px 15px 4px 20px;
+}
+.body_left_four button{
+	float: left;
+	width:58px;
+	height:28px;
+	margin-top:-24px;
+	margin-right: 10px;
+	display: block;
+	border:1px solid #e2e3e3;
+	border-radius:3px;
+	color:white;
+	background-color:#28a745;
+	background-image:
+	linear-gradient(-180deg,#34d058,#28a745 90%); /*图片颜色线性渐变*/
+	cursor:pointer;
+}
+.body_left_four button:hover{
+	background: #28a745;/*点击按钮时颜色会变深*/
+}
+
+
+.body_left{
+	float:left;
+	width:25%;
+	height:750px;
+	background: white;
+}
+.body_right{
+	float:right;
+	width:75%;
+	height:750px;
+	position:relative;
+	background: #f6f8fa;
+}
+.right_mid{
+	width:75%;
+	height:750px;
+	margin:33px 20px;
+	position:relative;
+	background: white;
+}
+
+.right_right{
+	float:right;
+	width:190px;
+	height:700px;
+	margin-top:33px;
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.right_right p{
+	font-size: 13px;
+	color:#242969;
+}
+.demo01{
+	width:180px;
+	height:50px;
+	margin-bottom: 20px;
+	border:.7px solid #d5f51f;	
+	border-radius:10px;
+	background:#fff9fc;
+	font-size:12px;
+	color:#586080;
+}
+
+.demo01 img{/*那个小蓝色的图标*/
+	width:50px;
+	height:30px;
+	margin:8px 5px 5px 8px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+.demo01 p{
+	float: right;
+	margin-top:16px;
+	margin-right: 35px;
+
+}
+
+.demo01 a{
+	
+	color:#0366d6;
+	text-decoration: none;
+}
+.demo01 a:hover{
+	color:#0366d6;
+	text-decoration: underline;
+}
+.demo02{
+	width:180px;
+	height:50px;
+	margin-bottom: 20px;
+	border:.7px solid #d5f51f;	
+	border-radius:10px;
+	background:#fff9fc;
+	font-size:12px;
+	color:#586080;
+}
+
+.demo02 img{
+	width:35px;
+	height:35px;
+	margin:8px 5px 5px 8px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+.demo02 p{
+	float: right;
+	margin-top:16px;
+	margin-right: 35px;
+
+}
+
+.demo02 a{
+	
+	color:#0366d6;
+	text-decoration: none;
+}
+.demo02 a:hover{
+	color:#0366d6;
+	text-decoration: underline;
+}
+
+.modalbox {
+    font-family: Arial, Helvetica, sans-serif;
+    /* 通过 position 让遮罩层撑满整个屏幕 */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* 遮罩层背景色为黑色 */
+    background: #000;
+    /* 给 z-index 一个过大的值，确保遮罩层”真的遮盖住了“模态框背后的元素 */
+    z-index: 99999;
+    /* 设置 opacity 为 0，用于隐藏模态框 */
+    opacity: 0;
+    /* 一些过渡效果 */
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    /* pointer-events 鼠标事件“穿透”该元素并且指定该元素“下面”的任何东西 */
+    /* 请参阅：https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events */
+    pointer-events: none;
+}
+
+/* 模态框显示状态 */
+.modalbox:target {
+    /* 不透明为 0.8 */
+    opacity: 0.8;
+    /* 与 pointer-events 属性未指定时的表现效果相同 */
+    /* 请参阅：https://developer.mozilla.org/zh-CN/docs/Web/CSS/pointer-events */
+    pointer-events: auto;
+}
+
+/* 模态框内容，你也可以自定义 */
+.modalbox-dialog {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+
+
+
